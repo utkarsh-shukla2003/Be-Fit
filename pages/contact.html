@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Fitness Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo"><span>BEFIT</span></a>
+
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="/">home</a></li>
+          <li><a href="/#about">about</a></li>
+          <li><a href="/our-services">service</a></li>
+          <li><a href="/plans">plan</a></li>
+          <li><a href="/register">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- register section starts  -->
+
+    <section class="register" id="register">
+      <h1 class="heading">Contact Us</h1>
+
+      <form
+        ng-app=""
+        name="myForm"
+        ng-controller="myCtrl"
+        ng-submit="submitForm()"
+        action="#"
+        method="POST"
+      >
+        <div class="inputBox">
+          <input
+            type="text"
+            placeholder="first name"
+            ng-model="firstName"
+            name="firstName"
+            required
+          />
+          <input
+            type="text"
+            placeholder="last name"
+            ng-model="lastName"
+            name="lastName"
+            required
+          />
+        </div>
+
+        <div class="inputBox">
+          <input
+            type="email"
+            placeholder="your email"
+            ng-model="email"
+            name="email"
+            required
+          />
+          <input
+            type="number"
+            placeholder="your number"
+            ng-model="phoneNumber"
+            name="phone"
+            required
+          />
+        </div>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="message"
+          ng-model="message"
+          name="message"
+          required
+        ></textarea>
+
+        <input
+          type="submit"
+          class="btn"
+          value="register"
+          ng-disabled="myForm.$invalid"
+        />
+      </form>
+    </section>
+
+    <!-- register section ends -->
+
+    <!-- footer section starts  -->
+
+    <!-- code for footer -->
+    <footer class="footer">
+      <table style="width: 100%">
+        <tr>
+          <td>
+            <h3>About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </td>
+          <td>
+            <h3>Address</h3>
+            <p>123 Main Street<br />Anytown, USA</p>
+          </td>
+          <td>
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa fa-phone"></i> 555-123-4567</li>
+              <li><i class="fa fa-envelope"></i> info@website.com</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="width: 100%; text-align: center">
+              <p>&copy; 2023 Fitness Website. All Rights Reserved.</p>
+              <p style="text-align: center">
+                Parth Nagdev(21BIT0398) | Rupesh Prasad(21BIT0420) | Utkarsh
+                Shukla(21BIT0395)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="/js/global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="/js/contact-validation.js"></script>
+  </body>
+</html>
